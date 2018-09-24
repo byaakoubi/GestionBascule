@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1703FF20-EEEA-4FB9-BB68-37B1B5293547}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GestionBascule</RootNamespace>
+    <AssemblyName>GestionBascule</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="datePicker">
+      <HintPath>C:\Users\bilel.yaakoubi\Downloads\DATETMEPICKER\DatePicker_DLL\DatePicker_DLL\datePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Npgsql, Version=2.0.11.92, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\LIBS\DockPanel_2.4_Bin\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\article\ArticleDao.cs" />
+    <Compile Include="Business\commun\configConnection.cs" />
+    <Compile Include="Business\commun\xmlUtilDao.cs" />
+    <Compile Include="Business\pesageLine\PesageLineDao.cs" />
+    <Compile Include="Business\pesageLine\PesageLineModel.cs" />
+    <Compile Include="Datasets\Pesage_Header.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pesage_Header.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datasets\Pesgae_Line.Designer.cs">
+      <DependentUpon>Pesgae_Line.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Business\commun\GlobVars.cs" />
+    <Compile Include="Business\pesageHeader\PesageHeaderModel.cs" />
+    <Compile Include="Business\pesageHeader\PesageHeaderDao.cs" />
+    <Compile Include="Presentation\Components\SelectBLFrn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\Components\SelectBLFrn.Designer.cs">
+      <DependentUpon>SelectBLFrn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Components\SelectBLClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\Components\SelectBLClient.Designer.cs">
+      <DependentUpon>SelectBLClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Components\SwitchDBComp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\Components\SwitchDBComp.Designer.cs">
+      <DependentUpon>SwitchDBComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\ConOperHeader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\ConOperHeader.Designer.cs">
+      <DependentUpon>ConOperHeader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\EntreeStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\EntreeStock.Designer.cs">
+      <DependentUpon>EntreeStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\LineClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\LineClient.Designer.cs">
+      <DependentUpon>LineClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\LineFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\LineFournisseur.Designer.cs">
+      <DependentUpon>LineFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\GetPoids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\GetPoids.Designer.cs">
+      <DependentUpon>GetPoids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\SortieStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\SortieStock.Designer.cs">
+      <DependentUpon>SortieStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\PARSUtility.cs" />
+    <Compile Include="Presentation\PontBascule\ConsultationOper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\ConsultationOper.Designer.cs">
+      <DependentUpon>ConsultationOper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\PontBascule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\PontBascule.Designer.cs">
+      <DependentUpon>PontBascule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\ImpressionPesage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\ImpressionPesage.Designer.cs">
+      <DependentUpon>ImpressionPesage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Business\DBUtillity.cs" />
+    <Compile Include="Presentation\PontBascule\ConfigBascule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\ConfigBascule.Designer.cs">
+      <DependentUpon>ConfigBascule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\INFO_MSG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\INFO_MSG.Designer.cs">
+      <DependentUpon>INFO_MSG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\Historiques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PontBascule\Historiques.Designer.cs">
+      <DependentUpon>Historiques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\MAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\MAIN.Designer.cs">
+      <DependentUpon>MAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsCR\pesageLineReport.cs">
+      <DependentUpon>pesageLineReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ReportsCR\pesageHeaderReport.cs">
+      <DependentUpon>pesageHeaderReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Presentation\Components\SelectBLFrn.resx">
+      <DependentUpon>SelectBLFrn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Components\SelectBLClient.resx">
+      <DependentUpon>SelectBLClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Components\SwitchDBComp.resx">
+      <DependentUpon>SwitchDBComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PontBascule\ConOperHeader.resx">
+      <DependentUpon>ConOperHeader.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PontBascule\EntreeStock.resx">
+      <DependentUpon>EntreeStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PontBascule\LineClient.resx">
+      <DependentUpon>LineClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PontBascule\LineFournisseur.resx">
+      <DependentUpon>LineFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PontBascule\GetPoids.resx">
+      <DependentUpon>GetPoids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PontBascule\SortieStock.resx">
+      <DependentUpon>SortieStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PontBascule\ConsultationOper.resx">
+      <DependentUpon>ConsultationOper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PontBascule\PontBascule.resx">
+      <DependentUpon>PontBascule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PontBascule\ImpressionPesage.resx">
+      <DependentUpon>ImpressionPesage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PontBascule\ConfigBascule.resx">
+      <DependentUpon>ConfigBascule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\INFO_MSG.resx">
+      <DependentUpon>INFO_MSG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\MAIN.resx">
+      <DependentUpon>MAIN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PontBascule\Historiques.resx">
+      <DependentUpon>Historiques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsCR\pesageLineReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>pesageLineReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportsCR\pesageHeaderReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>pesageHeaderReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\Pesage_Header.xsc">
+      <DependentUpon>Pesage_Header.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\Pesage_Header.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Pesage_Header.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Datasets\Pesage_Header.xss">
+      <DependentUpon>Pesage_Header.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\Pesgae_Line.xsc">
+      <DependentUpon>Pesgae_Line.xsd</DependentUpon>
+    </None>
+    <None Include="Datasets\Pesgae_Line.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Pesgae_Line.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Datasets\Pesgae_Line.xss">
+      <DependentUpon>Pesgae_Line.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show_loader_2.gif" />
+    <None Include="Resources\show_loader.gif" />
+    <None Include="Resources\stock.png" />
+    <None Include="Resources\automate.png" />
+    <None Include="Resources\ko.png" />
+    <None Include="Resources\ok.png" />
+    <None Include="Resources\if_Add.png" />
+    <None Include="Resources\if_Accept.png" />
+    <None Include="Resources\if_Tools.png" />
+    <None Include="Resources\if_Faq.png" />
+    <None Include="Resources\if_Refresh.png" />
+    <None Include="Resources\if_Edit.png" />
+    <None Include="Resources\if_Logout.png" />
+    <None Include="Resources\if_Delete.png" />
+    <None Include="Resources\if_Login.png" />
+    <None Include="Resources\if_File.png" />
+    <None Include="Resources\if_Folder.png" />
+    <None Include="Resources\if_Billboard.png" />
+    <None Include="Resources\if_File_delete.png" />
+    <None Include="Resources\if_Printer.png" />
+    <Content Include="favicon.ico" />
+    <None Include="Resources\Truck-2.png" />
+    <None Include="Resources\Truck.png" />
+    <None Include="Resources\gestion.png" />
+    <None Include="Resources\basic_printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LIBS\TNumEditDataGridViewElements\TNumEditDataGridViewElements.csproj">
+      <Project>{a60ea0a5-241c-41d5-a3de-d8633a59e7ec}</Project>
+      <Name>TNumEditDataGridViewElements</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LIBS\USER_CONTROLS\USER_CONTROLS.csproj">
+      <Project>{7505ef5d-2895-49fe-a07d-d9936f3460e7}</Project>
+      <Name>USER_CONTROLS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Business\model\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
