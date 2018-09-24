@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration
+	Navision_DB_Cnx = "Server=localhost;Database=SOMEPA; Trusted_Connection=Yes" 
+	Automate_Data_Source = "PC_BYAAKOUBI\SQLSERVER2014EXP" 
+	Automate_DB_Name = "Harman_2016"
+	Automate_DBPort = "1533" 
+	Automate_DBNetwork_Library = "DBMSSOCN" 
+	Automate_DBInitial_Catalog = "Harman_2016" 
+	Automate_DBUserName = "bilel" 
+	Automate_DBPassword = "bilel" 
+	Balance_Port = "COM1"
+	Max_Ecart_Weight = "100">
+</configuration>
